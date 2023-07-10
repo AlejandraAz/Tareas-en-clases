@@ -3,23 +3,30 @@ let cantCreditos = parseInt(prompt("¿Cuántos creditos deseas comprar?, elegí 
 
 switch (true) {
     case (isNaN(cantCreditos)):
-        console.error("Opción ingresada incorrecta, recuerda que debes ingresar un número entero positivo.✨✨")
+        console.error("Opción ingresada incorrecta, recuerda que debes ingresar un número entero positivo.✨✨");
+        alert("Opción ingresada incorrecta, recuerda que debes ingresar un número entero positivo.✨✨");
         break;
         case (cantCreditos === 1):
         console.log(`Muy bien,compraste : ${cantCreditos} credito,tienes acceso a : \n 🕹️Arcade`);
+        alert(`Muy bien,compraste : ${cantCreditos} credito,tienes acceso a : \n 🕹️Arcade`);
         break;
         case (cantCreditos === 2):
         console.log(`Muy bien,compraste : ${cantCreditos} creditos,tienes acceso a : \n 🕹️Arcade \n 🎮Consolas`);
+        alert(`Muy bien,compraste : ${cantCreditos} creditos,tienes acceso a : \n 🕹️Arcade \n 🎮Consolas`);
         break;
         case (cantCreditos === 3):
         console.log(`Muy bien,compraste : ${cantCreditos} creditos,tienes acceso a :  \n 🕹️Arcade \n 🎮Consolas \n 🤖Rol`);
+        alert(`Muy bien,compraste : ${cantCreditos} creditos,tienes acceso a :  \n 🕹️Arcade \n 🎮Consolas \n 🤖Rol`);
         break;
         case (cantCreditos === 4):
         console.log(`Muy bien,compraste : ${cantCreditos} creditos,tienes acceso a : \n 🕹️Arcade \n 🎮Consolas \n 👾Rol y \n 🤖Realidad virtual`);
+        alert(`Muy bien,compraste : ${cantCreditos} creditos,tienes acceso a : \n 🕹️Arcade \n 🎮Consolas \n 👾Rol y \n 🤖Realidad virtual`);
         break;
         case (cantCreditos > 4 && cantCreditos <= 20):
         alert(`Genial😉,compraste : ${cantCreditos} creditos,puedes usar los todos juegos que deseas dentro de las siguientes 48hs 😉👏`)
+        console.log(`Genial😉,compraste : ${cantCreditos} creditos,puedes usar los todos juegos que deseas dentro de las siguientes 48hs 😉👏`)
         break;
         default:
             console.warn('No se encuentra disponible esa opción😞.');
+            alert('No se encuentra disponible esa opción😞.');
 };
